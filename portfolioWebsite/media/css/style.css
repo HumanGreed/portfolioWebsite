@@ -355,6 +355,7 @@ body {
     background-repeat: no-repeat;
     background-image: url("../pictures/Background/background2.png");
     margin: 0;
+    font-family: helvetica;
 }
 
 .background {
@@ -373,22 +374,20 @@ body {
 }
 
 .menuBar ul {
-    z-index: 3;
-    width: 100%;
+    width: 65%;
     list-style-type: none;
-    display: inline;
-    position: absolute;
-    overflow: hidden;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    padding-left: 35%;
 }
 
 .menuBar ul li {
-    z-index: 4;
-    width: 250px;
-    height: 70px;
-    text-align: center;
+    width: 10%;
+    border: 2px solid black;
+    float: left;
+    height: 3.5vh;
     color: white;
-    background-color: red;
-    opacity: 1;
+    text-align: center;
+    padding-top: 2.5vh;
 }
