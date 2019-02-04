@@ -350,12 +350,12 @@ template {
 
 /* Home Page */
 body {
-    width: 100vh;
+    width: 100vw;
     position: absolute;
     background-repeat: no-repeat;
     background-image: url("../pictures/Background/background2.png");
     margin: 0;
-    font-family: helvetica;
+    font-family: Ubuntu-C;
 }
 
 .background {
@@ -374,12 +374,12 @@ body {
 }
 
 .menuBar ul {
-    width: 65%;
+    width: 63%;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding-left: 35%;
+    padding-left: 37%;
 }
 
 .menuBar ul li {
@@ -390,4 +390,44 @@ body {
     color: white;
     text-align: center;
     padding-top: 2.5vh;
+}
+
+.contentBox {
+    flex-direction: column;
+}
+
+.contentBox .aboutMeBox {
+    outline: 2px solid  black;
+    height: 50vh;
+}
+
+.contentBox .aboutMeBox .Name {
+    text-align: center;
+    font-size: 300%;
+    padding-top: 7%;
+    color: white;
+}
+
+.contentBox .aboutMeBox .provision {
+    box-shadow: 0 -4px 0 white;
+    height: 5vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 4vh;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.contentBox .otherTwoBoxes {
+    outline: 2px solid red;
+    height: 42.85vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.contentBox .otherTwoBoxes .projects {
+    width: 50vw;
+    outline: 2px solid blue;
 }
