@@ -349,13 +349,32 @@ template {
 }
 
 /* Home Page */
+@font-face {
+    font-family: Ubuntu;
+    src: url("../fonts/Ubuntu-R.ttf") format("truetype"),
+        url("../fonts/Ubuntu-RI.ttf") format("truetype"),
+        url("../fonts/Ubuntu-M.ttf") format("truetype"),
+        url("../fonts/Ubuntu-MI.ttf") format("truetype"),
+        url("../fonts/Ubuntu-L.ttf") format("truetype"),
+        url("../fonts/Ubuntu-LI.ttf") format("truetype"),
+        url("../fonts/Ubuntu-C.ttf") format("truetype"),
+        url("../fonts/Ubuntu-B.ttf") format("truetype"),
+        url("../fonts/Ubuntu-BI.ttf") format("truetype");
+
+    font-family: Ubuntu-mono;
+    src: url("../fonts/UbuntuMono-B.ttf") format("truetype"),
+        url("../fonts/UbuntuMono-BI.ttf") format("truetype"),
+        url("../fonts/UbuntuMono-R.ttf") format("truetype"),
+        url("../fonts/UbuntuMono-RI.ttf") format("truetype");
+}
+
 body {
     width: 100vw;
     position: absolute;
     background-repeat: no-repeat;
     background-image: url("../pictures/Background/background2.png");
     margin: 0;
-    font-family: Ubuntu-C;
+    font-family: Ubuntu;
 }
 
 .background {
@@ -390,6 +409,7 @@ body {
     color: white;
     text-align: center;
     padding-top: 2.5vh;
+
 }
 
 .contentBox {
@@ -397,8 +417,20 @@ body {
 }
 
 .contentBox .aboutMeBox {
-    outline: 2px solid  black;
     height: 50vh;
+}
+
+.contentBox .aboutMeBox .button {
+    background-color: #333333; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 46%;
+    margin-top: 5%;
 }
 
 .contentBox .aboutMeBox .Name {
@@ -409,7 +441,7 @@ body {
 }
 
 .contentBox .aboutMeBox .provision {
-    box-shadow: 0 -4px 0 white;
+    box-shadow: 0 -2px 0 white;
     height: 5vh;
     width: 50%;
     margin: auto;
@@ -421,7 +453,6 @@ body {
 }
 
 .contentBox .otherTwoBoxes {
-    outline: 2px solid red;
     height: 42.85vh;
     display: flex;
     flex-direction: row;
@@ -429,5 +460,22 @@ body {
 
 .contentBox .otherTwoBoxes .projects {
     width: 50vw;
-    outline: 2px solid blue;
+    background-image: url("../pictures/personalPictures/ScreenShot00000.png");
+    background-size: cover;
+    position: center;
+    background-repeat: no-repeat;
+}
+
+.contentBox .otherTwoBoxes .contact {
+    background-image: url("../pictures/personalPictures/me.jpg");
+    width: 50vw;
+    background-size: cover;
+}
+
+.contentBox .otherTwoBoxes .bannerBoxType {
+    font-family: Ubuntu;
+    color: white;
+    padding-left: 40%;
+    padding-top: 15%;
+    font-size: 290%;
 }

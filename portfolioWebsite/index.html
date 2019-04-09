@@ -13,18 +13,26 @@
         <div class="background">
             <div class="menuBar">
                 <ul>
-                    <li>
-                        <div class="item1" class="items">Home</div>
-                    </li>
-                    <li>
-                        <div class="item2" class="items">Projects</div>
-                    </li>
-                    <li>
-                        <div class="item3" class="items">About me</div>
-                    </li>
-                    <li>
-                        <div class="item4" class="items">Contact</div>
-                    </li>
+                    <a href="index.html">
+                        <li>
+                            <div class="item1" class="items" url="index.html">Home</div>
+                        </li>
+                    </a>
+                    <a href="Projects.html">
+                        <li>
+                            <div class="item2" class="items" url="Projects.html">Projects</div>
+                        </li>
+                    </a>
+                    <a href="About.html">
+                        <li>
+                            <div class="item3" class="items" url="about.html">About me</div>
+                        </li>
+                    </a>
+                    <a href="Contact.html">
+                        <li>
+                            <div class="item4" class="items" >Contact</div>
+                        </li>
+                    </a>
                 </ul>
             </div>
             <div class="contentBox">
@@ -33,12 +41,17 @@
                         Daan van Egmond
                     </div>
                     <div class="provision">
-                        Designer 'n shit
+                        Creative coder and music entrepreneur
                     </div>
+                    <button type="button" class="button" onclick="window.location.href='About.html'">About me</button>
                 </div>
                 <div class="otherTwoBoxes">
-                    <div class="projects"></div>
-                    <div class="contact"></div>
+                    <div class="projects">
+                        <div class="bannerBox bannerBoxType">projects</div>
+                    </div>
+                    <div class="contact">
+                        <div class="bannerBox2 bannerBoxType">Contact</div>
+                    </div>
                 </div>
             </div>
         </div>
